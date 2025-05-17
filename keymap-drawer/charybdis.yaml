@@ -38,59 +38,59 @@ layers:
   - /
   - DEV TOOLS
   - SCRL SLOW
-  - '&td_lt'
+  - L CLK
   - {t: SPACE, h: NUM}
   - {t: RETURN, h: NAV}
   - {t: BACK SPACE, h: SYM}
   NUM:
-  - {t: ▽, type: trans}
+  - ''
   - CAPS
-  - VOL UP
   - ''
+  - ','
+  - .
   - ''
-  - BRI UP
   - /
   - {t: '7', h: F7}
   - {t: '8', h: F8}
   - {t: '9', h: F9}
   - {t: '-', h: F10}
   - ''
-  - {t: ▽, type: trans}
+  - ''
   - Gui+ Z
-  - VOL DN
+  - ''
   - ''
   - BACK SPACE
-  - BRI DN
+  - ''
   - '*'
   - {t: '4', h: F4}
   - {t: '5', h: F5}
   - {t: '6', h: F6}
   - {t: +, h: F11}
-  - {t: ▽, type: trans}
   - ''
-  - MUTE
+  - ''
+  - ''
   - Gui+ X
   - Gui+ C
   - Gui+ V
-  - TAB
+  - Gui+ TAB
   - '0'
   - {t: '1', h: F1}
   - {t: '2', h: F2}
   - {t: '3', h: F3}
   - {t: '=', h: DEV TOOLS}
   - ''
-  - ''
+  - RETURN
   - ''
   - {type: held}
-  - .
-  - ','
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   NAV:
   - ''
   - {t: ▽, type: trans}
+  - VOL UP
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - BRI UP
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -99,10 +99,10 @@ layers:
   - ''
   - ''
   - {t: ▽, type: trans}
+  - VOL DN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - BRI DN
   - DARW
   - RARW
   - {t: ▽, type: trans}
@@ -111,7 +111,7 @@ layers:
   - ''
   - ''
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - MUTE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
