@@ -45,9 +45,9 @@ layers:
   NUM:
   - ''
   - CAPS
-  - ''
-  - ','
-  - .
+  - Ctl+Sft+ 0
+  - Ctl+Sft+ 1
+  - Ctl+Sft+ 2
   - ''
   - /
   - {t: '7', h: F7}
@@ -57,10 +57,10 @@ layers:
   - ''
   - ''
   - Gui+ Z
-  - ''
-  - ''
+  - '&gswitch'
+  - '&ghard'
+  - '&gcheckout'
   - BACK SPACE
-  - ''
   - '*'
   - {t: '4', h: F4}
   - {t: '5', h: F5}
@@ -75,8 +75,8 @@ layers:
   - Gui+ TAB
   - '0'
   - {t: '1', h: F1}
-  - {t: '2', h: F2}
-  - {t: '3', h: F3}
+  - '&td_2c'
+  - '&td_3d'
   - {t: '=', h: DEV TOOLS}
   - ''
   - RETURN
@@ -100,8 +100,8 @@ layers:
   - ''
   - {t: ▽, type: trans}
   - VOL DN
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - HSPLIT
+  - VSPLIT
   - BRI DN
   - DARW
   - RARW
@@ -117,7 +117,7 @@ layers:
   - {t: ▽, type: trans}
   - UARW
   - LARW
-  - {t: ▽, type: trans}
+  - SHRUG
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
