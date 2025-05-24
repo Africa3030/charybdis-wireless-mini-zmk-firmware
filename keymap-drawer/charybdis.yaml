@@ -57,10 +57,10 @@ layers:
   - ''
   - ''
   - Gui+ Z
-  - '&gswitch'
+  - '&glog'
   - '&ghard'
-  - '&gcheckout'
   - BACK SPACE
+  - '&gcheckout'
   - '*'
   - {t: '4', h: F4}
   - {t: '5', h: F5}
