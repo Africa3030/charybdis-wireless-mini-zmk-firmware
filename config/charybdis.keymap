@@ -151,6 +151,20 @@
             bindings = <&kp V>, <&kp TAB>;
         };
 
+        td_2c: td_2_coma {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <195>;
+            bindings = <&hm F2 N2>, <&kp COMMA>;
+        };
+        
+        td_3d: td_3_dot {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <195>;
+            bindings = <&hm F3 N3>, <&kp DOT>;
+        };
+
         td_bore: BASE_or_EXTRA {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
