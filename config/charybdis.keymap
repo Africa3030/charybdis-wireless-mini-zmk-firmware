@@ -228,23 +228,23 @@
         BASE {
             bindings = <
 // ╭────────────────┬──────────────────┬─────────────────────────┬─────────────────────────────┬──────────────────┬──────────────────╮  ╭────────────────┬─────────────────┬──────────────────────────────────┬──────────────────────────────┬────────────────────────┬──────────────╮
-    &to 0             &kp Q                   &kp  W                   &mt LC(LS(LALT)) F            &hm ESC P              &kp G              &kp J            &kp L                &hm LG(F) U                   &hm LG(R) Y                   &hm LG(S) SEMI          &td_layers
+      &none           &kp Q                   &kp  W                   &mt LC(LS(LALT)) F            &hm ESC P         &kp G               &kp J           &kp L                 &hm LG(F) U                     &hm LG(R) Y                   &hm LG(S) SEMI           &none
 // ├────────────────┼──────────────────┼─────────────────────────┼─────────────────────────────┼──────────────────┼──────────────────┤  ├────────────────┼─────────────────┼──────────────────────────────────┼──────────────────────────────┼────────────────────────┼──────────────┤
-    &hm LCMD TAB      &kp A                  &hm LALT S                &hm LCTRL R                 &hm_s LGUI T        &hm LPAR D           &hm LBKT M     &hm_right LGUI N          &hm_right LCTRL E             &hm_right LALT I                &kp O                  &kp DEL
+      &none           &kp A                  &hm LALT S                &hm LCTRL R                 &hm_s LGUI T        &hm LPAR D           &hm LBKT M     &hm_right LGUI N      &hm_right LCTRL E               &hm_right LALT I                &kp O                  &none
 // ├────────────────┼──────────────────┼─────────────────────────┼─────────────────────────────┼──────────────────┼──────────────────┤  ├────────────────┼─────────────────┼──────────────────────────────────┼──────────────────────────────┼────────────────────────┼──────────────┤
-    &kp C_AC_SEARCH   &hmsh LSHFT Z            &kp X                     &kp C                        &td_vt          &hm LBRC B            &hm LT K        &mkp LCLK                &td_cursor                    &kp H                       &hmsh RSHFT FSLH          &kp F12
+      &none           &hmsh LSHFT Z            &kp X                     &kp C                        &td_vt           &hm LBRC B           &hm LT K       &mkp LCLK             &td_cursor                      &kp H                       &hmsh RSHFT FSLH           &none
 // ╰────────────────┴──────────────────┴─────────────────────────┼─────────────────────────────┼──────────────────┼──────────────────┤  ├────────────────┼─────────────────┼──────────────────────────────────┴──────────────────────────────┴────────────────────────┴──────────────╯
-                                                                                   &td_cursor       &mkp LCLK        &lt 1 SPACE       &lt 2 RETURN     &lt 3 BACKSPACE
-                                                                              // ╰─────────────┴──────────────────┴─────────────────╯  ╰────────────────┴─────────────────╯  &kp COMMA                     &kp DOT 
+                                                                                   &td_cursor       &mkp LCLK         &lt 1 SPACE         &lt 2 RETURN     &lt 3 BACKSPACE
+                                                                              //  ╰─────────────┴──────────────────┴─────────────────╯  ╰────────────────┴─────────────────╯  &kp COMMA                     &kp DOT 
             >;
         };
         
 
         NUM {
             bindings = <
-&none    &kp CAPS      &kp LC(LS(N0)) &kp LC(LS(N1)) &kp LC(LS(N2))  &none             &kp SLASH  &hm F7 N7  &hm F8 N8  &hm F9 N9  &hm F10 MINUS  &none
-&none    &kp LG(Z)     &glog          &ghard         &kp BACKSPACE   &gcheckout        &kp ASTRK  &hm F4 N4  &hm F5 N5  &hm F6 N6  &hm F11 PLUS   &none
-&none    &kp LG(A)     &kp LG(X)      &kp LG(C)      &kp LG(V)       &kp LG(TAB)       &kp N0     &hm F1 N1  &hm COMMA N2 &hm DOT N3 &hm F12 EQUAL  &none
+&none    &kp CAPS      &kp LC(LS(N0)) &kp LC(LS(N1)) &kp LC(LS(N2))  &none             &hm F5 N5  &hm F6 N6  &hm F7 N7  &hm F8 N8  &hm F9 N9  &none
+&none    &kp LG(Z)     &glog          &ghard         &kp BACKSPACE   &gcheckout        &kp N0     &hm F1 N1  &hm F2 N2  &hm F3 N3  &hm F4 N4  &none
+&none    &kp LG(A)     &kp LG(X)      &kp LG(C)      &kp LG(V)       &kp LG(TAB)       &trans     &trans     &trans     &hm DOT N3 &trans     &none
                                       &kp RETURN     &none           &none             &trans     &trans
           //                      ╰────────────────┴────────────────┴───────x─────╯   ╰─────────┴──────────╯
             >;
