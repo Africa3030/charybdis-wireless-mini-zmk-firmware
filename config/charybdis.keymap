@@ -154,11 +154,11 @@
             bindings = <&kp K>, <&kp GREATER_THAN>;
         };
 
-        td_vt: td_v_tab {
+        td_dc: td_v_cot_comma {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <195>;
-            bindings = <&kp V>, <&kp TAB>;
+            bindings = <&lt 3 COMMA>, <&kp DOT>;
         };
 
         td_2c: td_2_coma {
@@ -232,10 +232,10 @@
 // ├────────────────┼──────────────────┼─────────────────────────┼─────────────────────────────┼──────────────────┼──────────────────┤  ├────────────────┼─────────────────┼──────────────────────────────────┼──────────────────────────────┼────────────────────────┼──────────────┤
       &none           &kp A                  &hm LALT S                &hm LCTRL R                 &hm_s LGUI T        &hm LPAR D           &hm LBKT M     &hm_right LGUI N      &hm_right LCTRL E               &hm_right LALT I                &kp O                  &none
 // ├────────────────┼──────────────────┼─────────────────────────┼─────────────────────────────┼──────────────────┼──────────────────┤  ├────────────────┼─────────────────┼──────────────────────────────────┼──────────────────────────────┼────────────────────────┼──────────────┤
-      &none           &hmsh LSHFT Z            &kp X                     &kp C                        &td_vt           &hm LBRC B           &hm LT K       &mkp LCLK             &td_cursor                      &kp H                       &hmsh RSHFT FSLH           &none
+      &none           &hmsh LSHFT Z            &kp X                     &kp C                        &kp V          &hm LBRC B           &hm LT K         &mkp LCLK             &td_cursor                      &kp H                       &hmsh RSHFT FSLH           &none
 // ╰────────────────┴──────────────────┴─────────────────────────┼─────────────────────────────┼──────────────────┼──────────────────┤  ├────────────────┼─────────────────┼──────────────────────────────────┴──────────────────────────────┴────────────────────────┴──────────────╯
-                                                                                   &td_cursor       &mkp LCLK         &lt 1 SPACE         &lt 2 RETURN     &lt 3 BACKSPACE
-                                                                              //  ╰─────────────┴──────────────────┴─────────────────╯  ╰────────────────┴─────────────────╯  &kp COMMA                     &kp DOT 
+                                                                                    &kp TAB       &mkp LCLK         &lt 1 SPACE          &lt 2 RETURN        &td_dc
+                                                                              //  ╰─────────────┴──────────────────┴─────────────────╯  ╰────────────────┴─────────────────╯  
             >;
         };
         
@@ -244,7 +244,7 @@
             bindings = <
 &none    &kp CAPS      &kp LC(LS(N0)) &kp LC(LS(N1)) &kp LC(LS(N2))  &none             &hm F5 N5  &hm F6 N6  &hm F7 N7  &hm F8 N8  &hm F9 N9  &none
 &none    &kp LG(Z)     &glog          &ghard         &kp BACKSPACE   &gcheckout        &kp N0     &hm F1 N1  &hm F2 N2  &hm F3 N3  &hm F4 N4  &none
-&none    &kp LG(A)     &kp LG(X)      &kp LG(C)      &kp LG(V)       &kp LG(TAB)       &trans     &trans     &trans     &hm DOT N3 &trans     &none
+&none    &kp LG(A)     &kp LG(X)      &kp LG(C)      &kp LG(V)       &kp LG(TAB)       &trans     &trans     &trans     &trans    &trans     &none
                                       &kp RETURN     &none           &none             &trans     &trans
           //                      ╰────────────────┴────────────────┴───────x─────╯   ╰─────────┴──────────╯
             >;
