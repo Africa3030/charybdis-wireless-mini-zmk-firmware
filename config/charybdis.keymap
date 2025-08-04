@@ -79,8 +79,8 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <135>; // triggers the hold behavior when the tapping-term-ms has expired
-            quick-tap-ms = <120>; // If you press a tapped hold-tap again within quick-tap-ms milliseconds of the first press, it will always trigger the tap behavior.
+            tapping-term-ms = <155>; // triggers the hold behavior when the tapping-term-ms has expired
+            quick-tap-ms = <130>; // If you press a tapped hold-tap again within quick-tap-ms milliseconds of the first press, it will always trigger the tap behavior.
             require-prior-idle-ms = <145>; // like quick-tap-ms however it will apply for any non-modifier key pressed before it
             bindings = <&kp>, <&kp>;  // hold, tap
         };
@@ -228,13 +228,13 @@
         BASE {
             bindings = <
 // ╭────────────────┬──────────────────┬─────────────────────────┬─────────────────────────────┬──────────────────┬──────────────────╮  ╭────────────────┬─────────────────┬──────────────────────────────────┬──────────────────────────────┬────────────────────────┬──────────────╮
-      &none           &kp Q                   &kp  W                   &mt LC(LS(N0)) F            &hm ESC P         &kp G               &kp J           &kp L                 &hm LG(F) U                     &hm LG(R) Y                   &hm LG(S) SEMI           &none
+      &none           &kp Q                   &kp  W                   &mt LC(LS(N0)) F            &hm ESC P         &hm ESC G              &kp J           &kp L                 &hm LG(F) U                     &hm LG(R) Y                   &hm LG(S) SEMI           &none
 // ├────────────────┼──────────────────┼─────────────────────────┼─────────────────────────────┼──────────────────┼──────────────────┤  ├────────────────┼─────────────────┼──────────────────────────────────┼──────────────────────────────┼────────────────────────┼──────────────┤
       &none           &kp A                  &hm LALT S                &hm LCTRL R                 &hm_s LGUI T        &hm LPAR D           &hm LBKT M     &hm_right LGUI N      &hm_right LCTRL E               &hm_right LALT I                &kp O                  &none
 // ├────────────────┼──────────────────┼─────────────────────────┼─────────────────────────────┼──────────────────┼──────────────────┤  ├────────────────┼─────────────────┼──────────────────────────────────┼──────────────────────────────┼────────────────────────┼──────────────┤
       &none           &hmsh LSHFT Z            &kp X                     &kp C                        &kp V          &hm LBRC B           &hm LT K         &mkp LCLK             &td_cursor                      &kp H                       &hmsh RSHFT FSLH           &none
 // ╰────────────────┴──────────────────┴─────────────────────────┼─────────────────────────────┼──────────────────┼──────────────────┤  ├────────────────┼─────────────────┼──────────────────────────────────┴──────────────────────────────┴────────────────────────┴──────────────╯
-                                                                                    &kp TAB       &kp BACKSPACE     &lt 1 SPACE     &lt 2 RETURN        &td_dc
+                                                                                &mt LG(TAB) TAB       &td_dc           &lt 1 SPACE          &lt 2 RETURN     &kp BACKSPACE
                                                                               //  ╰─────────────┴──────────────────┴─────────────────╯  ╰────────────────┴─────────────────╯  
             >;
         };
@@ -243,9 +243,9 @@
 
         NUM {
             bindings = <
-&none    &kp CAPS      &kp LC(LS(N0)) &kp LC(LS(N1)) &kp LC(LS(N2))  &none             &hm F5 N5  &hm F6 N6  &hm F7 N7  &hm F8 N8  &hm F9 N9  &none
-&none    &kp LG(Z)     &glog          &ghard         &kp BACKSPACE   &gcheckout        &kp N0     &hm F1 N1  &hm F2 N2  &hm F3 N3  &hm F4 N4  &none
-&none    &kp LG(A)     &kp LG(X)      &kp LG(C)      &kp LG(V)       &kp LG(TAB)       &trans     &trans     &trans     &trans    &trans     &none
+&none    &kp CAPS      &kp LC(LS(N0)) &kp LC(LS(N1)) &kp LC(LS(N2))  &none             &none      &hm F7 N7  &hm F8 N8  &hm F9 N9     &none  &none
+&none    &kp LG(Z)     &glog          &ghard         &kp BACKSPACE   &gcheckout        &none      &hm F4 N4  &hm F5 N5  &hm F6 N6     &none   &none
+&none    &kp LG(A)     &kp LG(X)      &kp LG(C)      &kp LG(V)       &kp LG(TAB)       &kp N0     &hm F1 N1  &hm F2 N2  &hm F3 N3     &none   &none
                                       &kp RETURN     &none           &none             &trans     &trans
           //                      ╰────────────────┴────────────────┴───────x─────╯   ╰─────────┴──────────╯
             >;
