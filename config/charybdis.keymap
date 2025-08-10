@@ -228,9 +228,9 @@
         BASE {
             bindings = <
 // ╭────────────────┬──────────────────┬─────────────────────────┬─────────────────────────────┬──────────────────┬──────────────────╮  ╭────────────────┬─────────────────┬──────────────────────────────────┬──────────────────────────────┬────────────────────────┬──────────────╮
-      &none           &kp Q                   &kp  W                   &mt LC(LS(N0)) F          &mt LC(LS(LALT)) P    &hm ESC G              &kp J           &kp L              &hm LG(F) U                     &hm LG(R) Y                   &hm LG(S) SEMI           &none
+      &none           &kp Q                   &kp  W                   &mt LC(LS(N0)) F          &mt LC(LS(LALT)) P    &hm ESC G              &kp J           &kp L              &hm LG(F) U                     &hm LG(R) Y                   &hm LG(SEMI) SEMI           &none
 // ├────────────────┼──────────────────┼─────────────────────────┼─────────────────────────────┼──────────────────┼──────────────────┤  ├────────────────┼─────────────────┼──────────────────────────────────┼──────────────────────────────┼────────────────────────┼──────────────┤
-      &none           &kp A                  &hm LALT S                &hm LCTRL R                 &hm_s LGUI T        &hm LPAR D         &hm LBKT M       &hm_right LGUI N      &hm_right LCTRL E               &hm_right LALT I                &kp O                  &none
+      &none           &kp A                  &hm LALT S                &hm LCTRL R                 &hm_s LGUI T        &hm LPAR D         &hm LBKT M       &hm_right LGUI N      &hm_right LCTRL E               &hm_right LALT I              &hm LG(S) O                  &none
 // ├────────────────┼──────────────────┼─────────────────────────┼─────────────────────────────┼──────────────────┼──────────────────┤  ├────────────────┼─────────────────┼──────────────────────────────────┼──────────────────────────────┼────────────────────────┼──────────────┤
       &none           &hmsh LSHFT Z          &hm LG(X) X               &hm  LG(C) C                &hm LG(V) V         &hm LBRC B           &hm LT K         &mkp LCLK             &td_cursor                      &kp H                       &hmsh RSHFT FSLH           &none
 // ╰────────────────┴──────────────────┴─────────────────────────┼─────────────────────────────┼──────────────────┼──────────────────┤  ├────────────────┼─────────────────┼──────────────────────────────────┴──────────────────────────────┴────────────────────────┴──────────────╯
@@ -243,9 +243,9 @@
 
         NUM {
             bindings = <
-&none    &kp CAPS      &kp LC(LS(N0)) &kp LC(LS(N1)) &kp LC(LS(N2))  &none             &none      &hm F7 N7  &hm F8 N8  &hm F9 N9     &none  &none
-&none    &kp LG(Z)     &glog          &ghard         &kp BACKSPACE   &gcheckout        &none      &hm F4 N4  &hm F5 N5  &hm F6 N6     &none   &none
-&none    &kp LG(A)     &kp LG(X)      &kp LG(C)      &kp LG(V)       &kp LG(TAB)       &kp N0     &hm F1 N1  &hm F2 N2  &hm F3 N3     &none   &none
+&none    &kp CAPS      &kp LC(LS(N0)) &kp LC(LS(N1)) &kp LC(LS(N2))  &none             &none      &hm_right F7 N7  &hm_right F8 N8  &hm_right F9 N9     &none  &none
+&none    &kp LG(Z)     &glog          &ghard         &kp BACKSPACE   &gcheckout        &none      &hm_right F4 N4  &hm_right F5 N5  &hm_right F6 N6     &none   &none
+&none    &kp LG(A)     &kp LG(X)      &kp LG(C)      &kp LG(V)       &kp LG(TAB)       &kp N0     &hm_right F1 N1  &hm_right F2 N2  &hm_right F3 N3     &none   &none
                                       &kp RETURN     &none           &none             &trans     &trans
           //                      ╰────────────────┴────────────────┴───────x─────╯   ╰─────────┴──────────╯
             >;
