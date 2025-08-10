@@ -158,7 +158,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <195>;
-            bindings = <&lt 3 DOT>, <&kp COMMA>;
+            bindings = <&lt 1 SPACE>, <&kp COMMA>;
         };
 
         td_2c: td_2_coma {
@@ -228,13 +228,13 @@
         BASE {
             bindings = <
 // ╭────────────────┬──────────────────┬─────────────────────────┬─────────────────────────────┬──────────────────┬──────────────────╮  ╭────────────────┬─────────────────┬──────────────────────────────────┬──────────────────────────────┬────────────────────────┬──────────────╮
-      &none           &kp Q                   &kp  W                   &mt LC(LS(N0)) F          &mt LC(LS(LALT)) P    &hm ESC G              &kp J           &kp L                 &hm LG(F) U                     &hm LG(R) Y                   &hm LG(S) SEMI           &none
+      &none           &kp Q                   &kp  W                   &mt LC(LS(N0)) F          &mt LC(LS(LALT)) P    &hm ESC G              &kp J           &kp L              &hm LG(F) U                     &hm LG(R) Y                   &hm LG(S) SEMI           &none
 // ├────────────────┼──────────────────┼─────────────────────────┼─────────────────────────────┼──────────────────┼──────────────────┤  ├────────────────┼─────────────────┼──────────────────────────────────┼──────────────────────────────┼────────────────────────┼──────────────┤
-      &none           &kp A                  &hm LALT S                &hm LCTRL R                 &hm_s LGUI T        &hm LPAR D           &hm LBKT M     &hm_right LGUI N      &hm_right LCTRL E               &hm_right LALT I                &kp O                  &none
+      &none           &kp A                  &hm LALT S                &hm LCTRL R                 &hm_s LGUI T        &hm LPAR D         &hm LBKT M       &hm_right LGUI N      &hm_right LCTRL E               &hm_right LALT I                &kp O                  &none
 // ├────────────────┼──────────────────┼─────────────────────────┼─────────────────────────────┼──────────────────┼──────────────────┤  ├────────────────┼─────────────────┼──────────────────────────────────┼──────────────────────────────┼────────────────────────┼──────────────┤
-      &none           &hmsh LSHFT Z            &kp X                     &kp C                        &kp V          &hm LBRC B           &hm LT K         &mkp LCLK             &td_cursor                      &kp H                       &hmsh RSHFT FSLH           &none
+      &none           &hmsh LSHFT Z          &hm LG(X) X               &hm  LG(C) C                &hm LG(V) V         &hm LBRC B           &hm LT K         &mkp LCLK             &td_cursor                      &kp H                       &hmsh RSHFT FSLH           &none
 // ╰────────────────┴──────────────────┴─────────────────────────┼─────────────────────────────┼──────────────────┼──────────────────┤  ├────────────────┼─────────────────┼──────────────────────────────────┴──────────────────────────────┴────────────────────────┴──────────────╯
-                                                                                &mt LG(TAB) TAB       &td_dc           &lt 1 SPACE          &lt 2 RETURN     &kp BACKSPACE
+                                                                                &mt LG(TAB) TAB      &lt 3 DOT           &td_dc           &lt 2 RETURN     &kp BACKSPACE
                                                                               //  ╰─────────────┴──────────────────┴─────────────────╯  ╰────────────────┴─────────────────╯  
             >;
         };
