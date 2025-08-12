@@ -157,7 +157,7 @@
         td_dc: td_v_cot_comma {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <195>; // triggers the hold behavior when the tapping-term-ms has expired
+            tapping-term-ms = <195>;
             quick-tap-ms = <170>; // If you press a tapped hold-tap again within quick-tap-ms milliseconds of the first press, it will always trigger the tap behavior.
             bindings = <&hm 1 SPACE>, <&kp COMMA>;
         };
