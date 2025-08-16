@@ -113,31 +113,11 @@
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32>;
         };
 
-        td_layers: td_layer_swap {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            bindings = <&to 0>, <&to 5>, <&to 4>; // tap, double_tap, tripple_tap
-        };
-    
-        td_clk_scrl: td_click_or_scroll {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <195>;
-            bindings = <&mkp RCLK>, <&mo 9>;  // tap/hold, double_tap
-        };
-        
-        td_rp: td_right_paren {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <195>;
-            bindings = <&kp D>, <&kp RIGHT_PARENTHESIS>;
-        };
-
         td_dc: td_v_cot_comma {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <195>;
-            bindings = <&hm 1 SPACE>, <&kp COMMA>;
+            bindings = <&lt 1 SPACE>, <&kp COMMA>;
         };
     
 
