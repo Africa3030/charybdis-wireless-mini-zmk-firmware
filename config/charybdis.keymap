@@ -116,7 +116,7 @@
         td_dc: td_v_cot_comma {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <195>;
+            tapping-term-ms = <175>;
             bindings = <&lt 1 SPACE>, <&kp COMMA>;
         };
     
