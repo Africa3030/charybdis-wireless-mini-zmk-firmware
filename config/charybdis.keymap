@@ -166,9 +166,9 @@
         compatible = "zmk,keymap";
         BASE {
             bindings = <
-    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans  &trans &trans   
-    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans  &trans &trans  
-    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans   &trans &trans 
+    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans  &trans &trans   
+    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans  &trans &trans  
+    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans   &trans &trans 
                               &trans    &trans    &trans    &trans    &trans
             >;
         };
@@ -177,9 +177,9 @@
 
         NUM {
             bindings = <
-    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans      &trans &trans 
-    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans      &trans &trans 
-    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans      &trans &trans 
+    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans  &trans &trans   
+    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans  &trans &trans  
+    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans   &trans &trans 
                               &trans    &trans    &trans    &trans    &trans
             >;
         };
