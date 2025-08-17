@@ -159,23 +159,16 @@
 //               ╰──────┴──────┴──────╯  ╰──────┴──────╯
 // #define BASE    0
 // #define NUM     1
-// #define NAV     2
-// #define SYM     3
-// #define GAME    4
-// #define PHOTOS  5
-// #define EXTRAS  6
-// #define MOUSE   7
-// #define SLOW    8
-// #define SCROLL  9
+
 
 
     keymap {
         compatible = "zmk,keymap";
         BASE {
             bindings = <
-    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    
-    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    
-    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    
+    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans  &trans &trans   
+    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans  &trans &trans  
+    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans   &trans &trans 
                               &trans    &trans    &trans    &trans    &trans
             >;
         };
@@ -184,87 +177,12 @@
 
         NUM {
             bindings = <
-    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    
-    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    
-    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    
+    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans      &trans &trans 
+    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans      &trans &trans 
+    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans      &trans &trans 
                               &trans    &trans    &trans    &trans    &trans
             >;
         };
 
-
-        NAV {
-            bindings = <
-    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    
-    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    
-    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    
-                              &trans    &trans    &trans    &trans    &trans
-            >;
-        };
-
-        
-
-        SYM {
-            bindings = <
-    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    
-    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    
-    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    
-                              &trans    &trans    &trans    &trans    &trans
-            >;
-        }; 
-
-
-        GAME {
-            bindings = <
-    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    
-    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    
-    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    
-                              &trans    &trans    &trans    &trans    &trans
-            >;
-        };
-
-        PHOTOS {
-            bindings = <
-    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    
-    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    
-    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    
-                              &trans    &trans    &trans    &trans    &trans
-            >;
-        };
-
-        EXTRAS {
-            bindings = <
-    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    
-    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    
-    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    
-                              &trans    &trans    &trans    &trans    &trans
-            >;
-        };
-
-        MOUSE {
-            bindings = <
-    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    
-    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    
-    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    
-                              &trans    &trans    &trans    &trans    &trans
-            >;
-        };
-
-        SLOW {
-            bindings = <
-    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    
-    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    
-    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    
-                              &trans    &trans    &trans    &trans    &trans
-            >;
-        };
-
-        SCROLL {
-            bindings = <
-    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    
-    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    
-    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    
-                              &trans    &trans    &trans    &trans    &trans
-            >;
-        };
     };
 };
