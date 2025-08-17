@@ -6,7 +6,7 @@
         display-name = "Charybdis 3x6";
 
         kscan = <&kscan0>;
-        transform = <&default_transform>;
+        transform = <&five_column_transform>;
 
         keys
             // Left Half - Main Keys
@@ -26,9 +26,9 @@
             , <&key_physical_attrs 100 100    0  138       0     0     0>
             , <&key_physical_attrs 100 100  100  138       0     0     0>
             , <&key_physical_attrs 100 100  200  112       0     0     0>
-            , <&key_physical_attrs 100 100  300  100       0     0     0>
-            , <&key_physical_attrs 100 100  400  112       0     0     0>
-            , <&key_physical_attrs 100 100  500  112       0     0     0>
+           // , <&key_physical_attrs 100 100  300  100       0     0     0>
+           // , <&key_physical_attrs 100 100  400  112       0     0     0>
+           // , <&key_physical_attrs 100 100  500  112       0     0     0>
 
             // Right Half - Main Keys
             //                       w   h    x    y     rot    rx    ry
@@ -47,9 +47,9 @@
             , <&key_physical_attrs 100 100  900  212       0     0     0>
             , <&key_physical_attrs 100 100 1000  212       0     0     0>
             , <&key_physical_attrs 100 100 1100  200       0     0     0>
-            , <&key_physical_attrs 100 100 1200  212       0     0     0>
-            , <&key_physical_attrs 100 100 1300  238       0     0     0>
-            , <&key_physical_attrs 100 100 1400  238       0     0     0>
+           // , <&key_physical_attrs 100 100 1200  212       0     0     0>
+           // , <&key_physical_attrs 100 100 1300  238       0     0     0>
+           // , <&key_physical_attrs 100 100 1400  238       0     0     0>
 
             // Thumb Clusters
             //                       w   h    x    y     rot    rx    ry
