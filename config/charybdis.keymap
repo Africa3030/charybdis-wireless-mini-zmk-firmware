@@ -169,14 +169,17 @@
                BASE {
             bindings = <
 // ╭────────────────┬──────────────────┬─────────────────────────┬─────────────────────────────┬──────────────────┬──────────────────╮  ╭────────────────┬─────────────────┬──────────────────────────────────┬──────────────────────────────┬────────────────────────┬──────────────╮
-                 &hm GRAVE Z           &hm APOS W                &hm LC(LS(N0)) F          &hm LC(LS(LALT)) P    &hm ESC G          &hm LG(R) J      &hm PRCNT L          &hm LG(F) U                     &hm AMPS Y                     &hm LS(SEMI)  SEMI         
+                 &hm GRAVE Q          &hm APOS W                &hm LC(LS(N0)) F          &hm LC(LS(LALT)) P    &hm ESC G           &hm LG(R) J      &hm PRCNT L          &hm LG(F) U                     &hm AMPS Y                     &hm LS(SEMI)  SEMI         
 // ├────────────────┼──────────────────┼─────────────────────────┼─────────────────────────────┼──────────────────┼──────────────────┤  ├────────────────┼─────────────────┼──────────────────────────────────┼──────────────────────────────┼────────────────────────┼──────────────┤
-                 &kp A                  &hm LALT S                &hm LCTRL R                 &hm_s LGUI T        &hm LPAR D         &hm LBKT M       &hm_right LGUI N     &hm_right LCTRL E               &hm_right LALT I               &hm LG(S) O                  
+                 &kp A                  &hm LALT S                &hm LCTRL R                 &hm_s LGUI T        &hm LPAR D            &hm LBKT M       &hm_right LGUI N     &hm_right LCTRL E               &hm_right LALT I               &hm LG(S) O                  
 // ├────────────────┼──────────────────┼─────────────────────────┼─────────────────────────────┼──────────────────┼──────────────────┤  ├────────────────┼─────────────────┼──────────────────────────────────┼──────────────────────────────┼────────────────────────┼──────────────┤
-                 &hmsh LSHFT Z          &hm LG(X) X               &hm  LG(C) C                &hm LG(V) V         &hm LBRC B         &hm LT K         &mkp LCLK            &td_cursor                      &hm_right PLUS H               &hmsh RSHFT FSLH           
+                 &hmsh LSHFT Z          &hm LG(X) X               &hm  LG(C) C                &hm LG(V) V         &hm LBRC B            &hm LT K         &mkp LCLK            &td_cursor                      &hm_right PLUS H               &hmsh RSHFT FSLH           
 // ╰────────────────┴──────────────────┴─────────────────────────┼─────────────────────────────┼──────────────────┼──────────────────┤  ├────────────────┼─────────────────┼──────────────────────────────────┴──────────────────────────────┴────────────────────────┴──────────────╯
-                                                                                &mt LG(TAB) TAB      &lt 3 DOT           &td_dc           &lt 2 RETURN     &kp BACKSPACE
+                 &none                   &none                      &mt LG(TAB) TAB      &lt 3 DOT           &td_dc                     &lt 2 RETURN     &kp BACKSPACE      &none                               &none                           &none  
                                                                               //  ╰─────────────┴──────────────────┴─────────────────╯  ╰────────────────┴─────────────────╯  
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none 
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  
+
             >;
         };
         
@@ -187,8 +190,11 @@
     &kp CAPS      &kp LC(LS(N0)) &kp LC(LS(N1)) &kp LC(LS(N2))  &none             &none      &hm_right F7 N7  &hm_right F8 N8  &hm_right F9 N9     &none  
     &kp LG(Z)     &glog          &ghard         &kp BACKSPACE   &gcheckout        &none      &hm_right F4 N4  &hm_right F5 N5  &hm_right F6 N6     &none   
     &kp LG(A)     &kp LG(X)      &kp LG(C)      &kp LG(V)       &kp LG(TAB)       &kp N0     &hm_right F1 N1  &hm_right F2 N2  &hm_right F3 N3     &none   
-                                      &kp RETURN     &none           &none             &trans     &trans
+               &none                   &none                             &kp RETURN     &none           &none             &trans     &trans  &none                   &none     &none 
           //                      ╰────────────────┴────────────────┴───────x─────╯   ╰─────────┴──────────╯
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  
+
             >;
         };
 
@@ -202,8 +208,10 @@
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼───────────────────┼────────────────┼──────────┤
         &trans  &kp C_MUTE    &trans     &trans    &trans         &kp UARW   &kp LARW   &kp LG(V)           &kp LG(C)        &kp LG(X)    
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼───────────────────┴────────────────┴──────────╯
-                                   &none     &trans     &trans         &trans     &trans
+            &none                   &none         &none     &trans     &trans         &trans     &trans &none                   &none   &none               
         //                      ╰──────────┴──────────┴──────────╯   ╰────x─────┴──────────╯
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  
             >;
         };
 
@@ -221,8 +229,10 @@
         //│          │          │          │          │   {              │   │    <             │          │    _     │    +     │    \     │
        &trans     &trans     &trans     &trans     &kp RBRC                &kp GT            &trans  &kp UNDER   &kp PLUS  &kp BSLH      
         //╰──────────┴──────────┴──────────┼──────────┼──────────────────┤   ├──────────────────┼──────────┼──────────┴──────────┴──────────╯
-                                   &none     &trans     &trans                  &trans            &trans
+           &none  &none     &none     &trans     &trans                  &trans            &trans   &none  &none   &none  
         //                      ╰──────────┴──────────┴──────────────────╯   ╰──────────────────┴────x─────╯
+        &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  
             >;
         }; 
 
