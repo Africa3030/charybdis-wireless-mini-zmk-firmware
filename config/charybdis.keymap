@@ -177,8 +177,8 @@
 // ╰────────────────┴──────────────────┴─────────────────────────┼─────────────────────────────┼──────────────────┼──────────────────┤  ├────────────────┼─────────────────┼──────────────────────────────────┴──────────────────────────────┴────────────────────────┴──────────────╯
                  &none                   &none                      &mt LG(TAB) TAB      &lt 3 DOT           &td_dc                     &lt 2 RETURN     &kp BACKSPACE      &none                               &none                           &none  
                                                                               //  ╰─────────────┴──────────────────┴─────────────────╯  ╰────────────────┴─────────────────╯  
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none 
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  
+&kp A   &kp A &kp A &kp A &kp A &kp A &kp A &kp A &kp A &kp A  
+&kp A   &kp A &kp A &kp A &kp A &kp A &kp A &kp A &kp A &kp A  
 
             >;
         };
