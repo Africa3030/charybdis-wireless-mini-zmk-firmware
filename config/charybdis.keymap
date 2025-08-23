@@ -161,6 +161,7 @@
 // #define NUM     1
 // #define NAV     2
 // #define SYM     3
+// #define SCROLL  4
 
 
 
@@ -227,4 +228,13 @@
         }; 
 
     };
+
+            SCROLL {
+            bindings = <
+          &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
+          &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
+          &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
+                              &trans    &trans    &trans    &trans    &trans
+            >;
+        };
 };
