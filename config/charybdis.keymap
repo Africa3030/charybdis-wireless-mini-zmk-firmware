@@ -16,20 +16,19 @@
     trackball_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
-        layers = <0 2 7>;
+        layers = <0 2>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
         scale-multiplier = <1>;
         scale-divisor = <2>;
-        // bindings = <&ib_toggle_layer 7>;
     };
 
     /* input config for snipe mode */
     trackball_snipe_listener {
         compatible = "zmk,input-behavior-listener";   
         device = <&vtrackball>;
-        layers = <8>;
+        layers = <4>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
@@ -41,7 +40,7 @@
     trackball_scroll_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
-        layers = <9>;
+        layers = <5>;
         evt-type = <INPUT_EV_REL>;            
         x-input-code = <INPUT_REL_MISC>;
         y-input-code = <INPUT_REL_WHEEL>;
@@ -161,7 +160,8 @@
 // #define NUM     1
 // #define NAV     2
 // #define SYM     3
-// #define SCROLL  4
+// #define SLOW    4
+// #define SCROLL  5
 
 
 
@@ -228,6 +228,16 @@
         }; 
 
     };
+
+            SLOW {
+            bindings = <
+&trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
+&trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
+&trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
+                              &trans    &trans    &trans    &trans    &trans
+            >;
+        };
+
 
             SCROLL {
             bindings = <
