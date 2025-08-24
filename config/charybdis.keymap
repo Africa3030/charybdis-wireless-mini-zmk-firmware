@@ -185,9 +185,9 @@
 
         NUM {
             bindings = <
-    &&none kp CAPS      &kp LC(LS(N0)) &kp LC(LS(N1)) &kp LC(LS(N2))  &none             &none      &hm_right F7 N7  &hm_right F8 N8  &hm_right F9 N9     &none &none
-    &&none kp LG(Z)     &glog          &ghard         &kp BACKSPACE   &gcheckout        &none      &hm_right F4 N4  &hm_right F5 N5  &hm_right F6 N6     &none &none
-    &&none kp LG(A)     &kp LG(X)      &kp LG(C)      &kp LG(V)       &kp LG(TAB)       &kp N0     &hm_right F1 N1  &hm_right F2 N2  &hm_right F3 N3     &none &none
+&none    &kp CAPS      &kp LC(LS(N0)) &kp LC(LS(N1)) &kp LC(LS(N2))  &none             &none      &hm_right F7 N7  &hm_right F8 N8  &hm_right F9 N9     &none &none
+&none    &kp LG(Z)     &glog          &ghard         &kp BACKSPACE   &gcheckout        &none      &hm_right F4 N4  &hm_right F5 N5  &hm_right F6 N6     &none &none
+&none    &kp LG(A)     &kp LG(X)      &kp LG(C)      &kp LG(V)       &kp LG(TAB)       &kp N0     &hm_right F1 N1  &hm_right F2 N2  &hm_right F3 N3     &none &none
                                       &kp RETURN     &none           &none             &trans     &trans
           //                      ╰────────────────┴────────────────┴───────x─────╯   ╰─────────┴──────────╯
             >;
@@ -241,9 +241,9 @@
 
             SCROLL {
             bindings = <
-      &none   &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans &none
-     &none     &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans &none
-     &none     &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans &none
+          &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
+          &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
+          &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
                               &trans    &trans    &trans    &trans    &trans
             >;
         };
