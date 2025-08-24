@@ -163,8 +163,6 @@
 // #define SLOW    4
 // #define SCROLL  5
 
-
-
     keymap {
         compatible = "zmk,keymap";
                BASE {
